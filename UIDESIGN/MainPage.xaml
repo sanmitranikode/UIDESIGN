@@ -15,12 +15,12 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <RelativePanel>
-            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"  Background="#122051" FontSize="36" Click="HamburgerButton_Click" />
+            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"  Foreground="White"  Background="#173C66" FontSize="20" Click="HamburgerButton_Click" />
             <TextBlock Name="TitleTextBlock"
                        RelativePanel.RightOf="HamburgerButton"
                        FontSize="28"
                        FontWeight="Bold"
-                       Margin="20,5,0,0"/>
+                       Margin="20,0,0,0"/>
 
             <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" RelativePanel.RightOf="TitleTextBlock">
                 <Image Source="icons8plusmath48.png"></Image>
@@ -31,61 +31,103 @@
                    Grid.Row="1" 
                    
                    DisplayMode="CompactOverlay" 
-                   OpenPaneLength="200" 
-                   CompactPaneLength="56" 
+                   OpenPaneLength="150" 
+                   CompactPaneLength="40" 
                    HorizontalAlignment="Left">
-            <SplitView.Pane >
+            <SplitView.Pane>
                 <ListBox SelectionMode="Single" 
                          Background="#173C66"
                          Name="IconsListBox" 
                          SelectionChanged="IconsListBox_SelectionChanged">
-                    <ListBoxItem Name="Customer">
+                    <ListBoxItem Name="Menu" Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE72D;" />
-                            <TextBlock Text="Customer" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" IsColorFontEnabled="True" Foreground="White" Text="&#xE72D;" />
+                           
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Customer" Height="43">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" IsColorFontEnabled="True" Foreground="White" Text="&#xE72D;" />
+                            <TextBlock Text="Customer" Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
 
-                    <ListBoxItem Name="Vendor">
+                    <ListBoxItem Name="Vendor" Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE734;" />
-                            <TextBlock Text="Vendor" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Vendor" Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="FavoritesListBoxItem1">
+                    <ListBoxItem Name="FavoritesListBoxItem1" Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE734;" />
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="FavoritesListBoxItem2">
+                    <ListBoxItem Name="FavoritesListBoxItem2"  Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE734;" />
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites" Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="FavoritesListBoxItem3">
+                    <ListBoxItem Name="FavoritesListBoxItem3"  Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE734;" />
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="FavoritesListBoxItem4">
+                    <ListBoxItem Name="FavoritesListBoxItem4"  Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE734;" />
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="FavoritesListBoxItem5">
+                    <ListBoxItem Name="FavoritesListBoxItem5"  Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE734;" />
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="FavoritesListBoxItem6">
+                    <ListBoxItem Name="FavoritesListBoxItem6"  Height="43">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE713;" />
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE2Af;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="FavoritesListBoxItem7"  Height="43">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="FavoritesListBoxItem8"  Height="43">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="FavoritesListBoxItem9"  Height="43">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE163;" />
+                            <TextBlock Text="Favorites"  Foreground="White" FontSize="20" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="FavoritesListBoxItem10"  Height="43">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites" Foreground="White" FontSize="20" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="FavoritesListBoxItem11"  Height="43">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" IsColorFontEnabled="True" Foreground="White" FontSize="20" Text="&#xE734;" />
+                            <TextBlock Text="Favorites" Foreground="White" FontSize="20" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="FavoritesListBoxItem12"  Height="43">
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                            <TextBlock FontFamily="Segoe UI Symbol" IsColorFontEnabled="True" Foreground="White" FontSize="18" Text="&#xE115;" />
+                            <TextBlock Text="Favorites" Foreground="White" FontSize="20" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
 
