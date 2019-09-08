@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UIDESIGN"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" 
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -14,7 +15,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <RelativePanel>
-            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"  Background="#173C66" FontSize="36" Click="HamburgerButton_Click" />
+            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"  Background="#122051" FontSize="36" Click="HamburgerButton_Click" />
             <TextBlock Name="TitleTextBlock"
                        RelativePanel.RightOf="HamburgerButton"
                        FontSize="28"
