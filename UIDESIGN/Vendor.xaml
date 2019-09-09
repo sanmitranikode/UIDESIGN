@@ -8,7 +8,38 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="MainGrid">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="VisualStatePhone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="mySearchBox.Background" Value="Red" />
+                        <Setter Target="mySearchBox.FontSize" Value="18" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateTablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="mySearchBox.Background" Value="Yellow" />
+                        <Setter Target="mySearchBox.FontSize" Value="36" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateDesktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="mySearchBox.Background" Value="Blue" />
+                        <Setter Target="mySearchBox.FontSize" Value="54" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
             <RowDefinition Height="10*" />
@@ -39,7 +70,7 @@
                       />
                 </StackPanel>
                 <StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="15,0,0,0">
-                    <ComboBox  PlaceholderText="Short By" Width="200">
+                    <ComboBox  Name="combobox1" PlaceholderText="Short By" Width="200">
                         <x:String>Blue</x:String>
                         <x:String>Green</x:String>
                         <x:String>Red</x:String>
@@ -47,7 +78,7 @@
                     </ComboBox>
                 </StackPanel>
                 <StackPanel Grid.Column="2" Grid.Row="0" Margin="15,0,0,0">
-                    <ComboBox  PlaceholderText="Customer Group" Width="200">
+                    <ComboBox Name="combobox2"  PlaceholderText="Customer Group" Width="200">
                         <x:String>Blue</x:String>
                         <x:String>Green</x:String>
                         <x:String>Red</x:String>
